@@ -349,3 +349,49 @@ form .text{
   color: #333;
   font-weight: bold;
 }
+
+
+.showbtn{
+  margin: 0 10px;
+  width: 120px;
+  height: 45px;
+  background-color: #41B619;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 5px;
+}
+.containerу{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.activebtn{
+  margin: 0 10px;
+  width: 120px;
+  padding: 5px;
+  height: 45px;
+  border: 2px solid #41B619;
+  background-color: white;
+  border-radius: 10px;
+  color: #41B619;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.clear{
+  margin: 0 10px;
+  width: 120px;
+  padding: 5px;
+  height: 45px;
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  font-weight: 600;
+  cursor: pointer; 
+}

@@ -38,7 +38,7 @@ function Header() {
           <ul>
             <li className='nav-li'><Link to="/">{t("mainPage")}</Link></li>
             <li className='nav-li'><Link to="/Okna">{t("windows")}</Link></li>
-            <li className='nav-li'><Link to="/Stekla">{t("glasses")}</Link></li>
+            <li className='nav-li'><Link to="/Dveri">{t("doors")}</Link></li>
             <li className='nav-li'><Link to="/Vitrages">{t("vitrages")}</Link></li>
           </ul>
         </nav>

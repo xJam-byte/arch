@@ -18,7 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Okna" element={<Okna />} />
-          <Route path="/Stekla" element={<Doors />} />
+          <Route path="/Dveri" element={<Doors />} />
           <Route path="/Vitrages" element={<Vitrges />} />
         </Routes>
       </main>

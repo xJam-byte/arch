@@ -7,7 +7,6 @@ import 'slick-carousel/slick/slick-theme.css';
 const ProductInfo = ({products}) => {
 
 //   useEffect(() => {
-//     // Замените URL на ваш API эндпоинт
 //     axios.get('https://api.example.com/products')
 //       .then(response => {
 //         setProducts(response.data);
