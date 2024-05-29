@@ -4,6 +4,8 @@ import Causes from '../components/Causes'
 import LeaveInfo from '../components/LeaveInfo'
 import ProductInfo from '../components/ProductInfo'
 import { useTranslation } from 'react-i18next'
+import OurWorks from '../components/OurWorks'
+import Reviews from '../components/Reviews'
 
 function Home() {
   const [isPressed, setIsPressed] = useState('');
@@ -163,6 +165,8 @@ const renderItems = () => {
         <button className='clear' onClick={() => setIsPressed("")}>{t("clear")}</button>
       </div>
       {renderItems()}
+      <OurWorks />
+      <Reviews />
     </div>
   )
 }
