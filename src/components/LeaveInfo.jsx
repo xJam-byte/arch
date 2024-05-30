@@ -16,6 +16,7 @@ function LeaveInfo() {
                 <p className='formsub'>{t("leaveinfo-form-sub")}<br />+ 7 707 607 09 66</p>
                 <input type="text" placeholder={t("leaveinfo-form-input1")} />
                 <input type="text" placeholder={t("leaveinfo-form-input2")} />
+                <textarea rows={3} style={{marginTop: 15, outline: "none", fontSize: "18px", borderRadius: 5, padding: 10}} name="message" id="message"></textarea>
                 <input type="submit" className='btn' value={t("leaveinfo-form-btn")} />
                 <p className='text'>{t("leaveinfo-form-bottomtext")}</p>
             </form>

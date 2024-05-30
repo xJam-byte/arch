@@ -9,6 +9,7 @@ import Doors from "./pages/Doors";
 import Vitrges from "./pages/Vitrges";
 
 import "./App.css";
+import AdminPanel from "./pages/AdminPanel";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/Okna" element={<Okna />} />
           <Route path="/Dveri" element={<Doors />} />
           <Route path="/Vitrages" element={<Vitrges />} />
+          <Route path="/AdminPanel" element={<AdminPanel />} />
         </Routes>
       </main>
       <Footer />

@@ -21,14 +21,14 @@ function Okna() {
       name: "ПВХ Окно Современное",
       description: "Современные ПВХ окна с улучшенными характеристиками шумопоглощения.",
       price: "от 60000 тг",
-      image: "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"
+      image: "https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp"
     },
     {
       id: 3,
       name: "Алюминиевое Окно",
       description: "Легкие и прочные алюминиевые окна с высоким уровнем герметичности.",
       price: "от 70000 тг",
-      image: "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"
+      image: "https://media.macphun.com/img/uploads/customer/how-to/608/15542038745ca344e267fb80.28757312.jpg?q=85&w=1340"
     },
     {
       id: 4,

@@ -325,22 +325,22 @@ form .text{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%; /* Сохранение высоты */
+  height: 100%;
 }
 
 .product-image {
   width: 100%;
   height: auto;
-  max-height: 200px; /* Ограничение максимальной высоты изображения */
-  object-fit: contain; /* Сохранение пропорций изображения */
+  max-height: 200px; 
+  object-fit: contain; 
 }
 
 .product-info {
   margin-top: 10px;
-  flex-grow: 1; /* Расширяет блок, чтобы занять оставшееся пространство */
+  flex-grow: 1; 
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; /* Выровнять текст по нижнему краю */
+  justify-content: flex-end; 
 }
 
 .product-info h3 {
@@ -351,7 +351,7 @@ form .text{
 .product-info p {
   font-size: 0.9em;
   color: #666;
-  flex-grow: 1; /* Расширяет блок, чтобы занять оставшееся пространство */
+  flex-grow: 1;
 }
 
 .product-info span {
@@ -362,7 +362,6 @@ form .text{
   font-weight: bold;
 }
 
-/* Стиль для обеспечения корректного отображения карточек в строку внутри Slider */
 .slick-slide > div {
   display: flex;
   justify-content: center;
@@ -519,4 +518,67 @@ form .text{
 }
 .reviewcontent{
   padding: 5px;
+}
+
+
+
+.requests-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  background: #f0f2f5;
+}
+
+.request-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.request-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.request-info {
+  text-align: center;
+}
+
+.request-info h3 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.request-info p {
+  margin: 5px 0;
+  font-size: 1em;
+  color: #666;
+}
+
+.request-info p strong {
+  color: #333;
 }

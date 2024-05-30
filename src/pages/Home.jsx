@@ -152,7 +152,8 @@ const renderItems = () => {
       <ImgBlock />
       <Causes />
       <LeaveInfo />
-      <div className="containerу">
+      <hr />
+      <div style={{marginTop: 50}} className="containerу">
         {isPressed === 'Окн' ? 
         <button onClick={()=> onClick("Окн")} className='activebtn'>{t("home-windows")}</button> : 
         <button onClick={()=> onClick("Окн")} className='showbtn'>{t("home-windows")}</button>}
