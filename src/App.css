@@ -582,3 +582,8 @@ form .text{
 .request-info p strong {
   color: #333;
 }
+
+textarea{
+  resize: vertical;
+  max-height: 80px;
+}
