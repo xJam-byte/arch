@@ -586,4 +586,5 @@ form .text{
 textarea{
   resize: vertical;
   max-height: 80px;
+  background-color: #f3ecec;
 }

@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router";
+import { Route, Routes, useLocation } from "react-router";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -12,9 +12,10 @@ import "./App.css";
 import AdminPanel from "./pages/AdminPanel";
 
 function App() {
+  const location = useLocation();
   return (
     <div className="App">
-      <Header />
+      {location.pathname === "/AdminPanel" || <Header />}
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
