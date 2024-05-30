@@ -8,6 +8,8 @@ import { useTranslation } from 'react-i18next'
 function Doors() {
   const [isPressed, setIsPressed] = useState('');
   const {t} = useTranslation();
+
+
   const [products, setProducts] = useState(
     [
       {
@@ -19,6 +21,13 @@ function Doors() {
       },
       {
         id: 2,
+        name: "Входная Дверь Деревянная",
+        description: "Классическая деревянная входная дверь с декоративными элементами.",
+        price: "от 150000 тг",
+        image: "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"
+      },
+      {
+        id: 6,
         name: "Входная Дверь Деревянная",
         description: "Классическая деревянная входная дверь с декоративными элементами.",
         price: "от 150000 тг",
@@ -46,14 +55,24 @@ function Doors() {
         image: "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"
       }
     
-  ]);
+    ]);
+
+      //   useEffect(() => {
+//     axios.get('https://api.example.com/products')
+//       .then(response => {
+//         setProducts(response.data);
+//       })
+//       .catch(error => {
+//         console.error('Error fetching the products:', error);
+//       });
+//   }, []);
 
   const onClick = (searchValue) => {
     if (searchValue === "Сталь"){
       setIsPressed("Сталь");
     }else if(searchValue === "ПВХ"){
       setIsPressed("ПВХ");
-    }else{
+    }else if(searchValue === "Деревянн"){
       setIsPressed("Деревянн");
     }
   }
@@ -66,15 +85,6 @@ function Doors() {
     )
   }
 
-//   useEffect(() => {
-//     axios.get('https://api.example.com/products')
-//       .then(response => {
-//         setProducts(response.data);
-//       })
-//       .catch(error => {
-//         console.error('Error fetching the products:', error);
-//       });
-//   }, []);
 
   return (
     <div>

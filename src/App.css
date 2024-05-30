@@ -171,7 +171,9 @@ footer {
 .imgblock .right{
   height: 600px;
   width: 35%;
-  background-color: gray;
+  /* background-color: gray; */
+  background-color: rgba(194, 186, 186, 0.2);
+
 }
 
 
@@ -310,7 +312,6 @@ form .text{
   cursor: default !important;
 }
 
-
 .product-slider {
   width: 80%;
   margin: 0 auto;
@@ -321,15 +322,25 @@ form .text{
   text-align: center;
   border: 1px solid #ddd;
   background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Сохранение высоты */
 }
 
 .product-image {
   width: 100%;
   height: auto;
+  max-height: 200px; /* Ограничение максимальной высоты изображения */
+  object-fit: contain; /* Сохранение пропорций изображения */
 }
 
 .product-info {
   margin-top: 10px;
+  flex-grow: 1; /* Расширяет блок, чтобы занять оставшееся пространство */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Выровнять текст по нижнему краю */
 }
 
 .product-info h3 {
@@ -340,6 +351,7 @@ form .text{
 .product-info p {
   font-size: 0.9em;
   color: #666;
+  flex-grow: 1; /* Расширяет блок, чтобы занять оставшееся пространство */
 }
 
 .product-info span {
@@ -349,6 +361,15 @@ form .text{
   color: #333;
   font-weight: bold;
 }
+
+/* Стиль для обеспечения корректного отображения карточек в строку внутри Slider */
+.slick-slide > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 
 
 .showbtn{

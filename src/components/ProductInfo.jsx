@@ -1,20 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Slider from 'react-slick';
-import axios from 'axios';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 const ProductInfo = ({products}) => {
-
-//   useEffect(() => {
-//     axios.get('https://api.example.com/products')
-//       .then(response => {
-//         setProducts(response.data);
-//       })
-//       .catch(error => {
-//         console.error('Error fetching the products:', error);
-//       });
-//   }, []);
+  const sliderRef = useRef(null);
+  useEffect(() => {
+    if (sliderRef.current) {
+      sliderRef.current.slickGoTo(0); // Вернуться к первому слайду после обновления
+    }
+  }, [products]);
 
   const settings = {
     dots: true,

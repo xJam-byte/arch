@@ -38,6 +38,13 @@ function Okna() {
       image: "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"
     },
     {
+      id: 6,
+      name: "Деревянное Окно",
+      description: "Элегантные деревянные окна с натуральной отделкой и защитным покрытием.",
+      price: "от 80000 тг",
+      image: "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"
+    },
+    {
       id: 5,
       name: "Алюминиевое Окно",
       description: "Окна с тройным остеклением для максимальной энергоэффективности.",
