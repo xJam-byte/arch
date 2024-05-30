@@ -38,8 +38,9 @@ function Reviews() {
             {reviews.map((review) => (
                 <div className='review-card'>
                     <div className="userinfo">
-                        <img width={50} height={50} className="review-card-userimg" src={review.userimg} alt='profile'/>
+                        {/* <img width={50} height={50} className="review-card-userimg" src={review.userimg} alt='profile'/> */}
                         <div className="review-card-username">{review.username}</div>
+                        <p>miles.morales@gmail.com</p>
                     </div>
                     <div className="reviewcontent">
                         <div className="review-card-title">{review.reviewTitle}</div>
